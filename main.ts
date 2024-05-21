@@ -3,7 +3,7 @@
 import inquirer from "inquirer"
 import chalk from "chalk"
 
-console.log(chalk.bold.magentaBright("\n\t Word Counter By Hashir Raees"))
+console.log(chalk.bold.yellowBright("\n\t WELCOME \n\t"),chalk.italic.magentaBright("\n Word Counter By HashirRaees\n"))
 
 const answer : {
     sentence : string
@@ -17,6 +17,6 @@ const answer : {
 ])
 const words = answer.sentence.trim().split(" ")
 
-console.log(words)
+console.log(chalk.italic.cyanBright(words))
 
 console.log(`your sentence word count is ${words.length}`)
